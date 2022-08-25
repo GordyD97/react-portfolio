@@ -1,9 +1,12 @@
 import React from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { useState } from "react";
+// import NavLinks from "./NavLinks";
+
 
 const Navbar = () => {
 
-cosnt [ nav, setNav] = useState(false);
+const [ nav, setNav] = useState(false);
 
   const links = [
     {
@@ -31,7 +34,7 @@ cosnt [ nav, setNav] = useState(false);
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
       <div>
-        <h1 className="text-5xl font-brandcard ml-2">Gordon Draine IV</h1>
+        <h1 className="text-4xl font-brandcard ml-2">Gordon Draine IV</h1>
       </div>
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
@@ -43,14 +46,22 @@ cosnt [ nav, setNav] = useState(false);
           </li>
         ))}
       </ul>
-      <div onClick={() => setNav(!nav)} className="cursor-pointer pr-4 z-10 text-gray-500">
+      <div onClick={() => setNav(!nav)} className="cursor-pointer pr-4 z-10 text-gray-800 md:hidden">
           {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
+      {nav && (
       <ul className="flex flex-col justify-center absolute top-0 w-full h-screen bggradient-to-b from-black to-gray-500 text-gray-800">
-        <li className="px-4 cursor-pointer capitalize py-6 text-4xl">home</li>
-        
+        {links.map(({ id, link }) => (
+          <li
+            key={id}
+            className="px-4 cursor-pointer capitalize py-6 text-4xl"
+          >
+            {link}
+          </li>
+        ))}
       </ul>
+      )}
     </div>
   );
 };
