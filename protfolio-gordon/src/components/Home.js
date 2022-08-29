@@ -1,7 +1,7 @@
 import React from 'react';
 import HeroImage from '../assets/picofmeatseniorshowcase.jpg';
-import { Link } from 'react-scroll';
-import { BiUpArrowAlt } from 'react-icons/bi';
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+// import { Link } from 'react-scroll';
 
 const Home = () => {
   return (
@@ -25,12 +25,19 @@ const Home = () => {
 
                 </p>
                 <div>
-                    <Link to="portfolio" smooth duratiion={500} className='text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
+                    {/* <button 
+                     className='text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
                         portfolio
                         <span className='group-hover:rotate-90 duration-300'>
-                        <BiUpArrowAlt size={25} className='ml-1'/>
+                            <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
                         </span>
-                    </Link>
+                    </button> */}
+                      <button to="portfolio" smooth duratiion={500} className='text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
+                          portfolio
+                          <span className='group-hover:rotate-90 duration-300'>
+                              <MdOutlineKeyboardArrowRight size={25} className='ml-1' />
+                          </span>
+                      </button>
                 </div>
             </div>
                <div>
@@ -42,4 +49,4 @@ const Home = () => {
   );
 };
 
-export default Home
+export default Home;
