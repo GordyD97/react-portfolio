@@ -44,7 +44,7 @@ export const SocialLinks = () => {
                 </>
             ),
             // enter twitter link
-            href: "/resume.pdf",  
+            href: "https://twitter.com/Gordy_40",  
             style: "rounded-br-md",
             download: true,
         },
