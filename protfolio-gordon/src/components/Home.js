@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroImage from '../assets/picofmeatseniorshowcase.jpg';
-// import { BiUpArrowAlt } from 'react-icons';
+import { Link } from 'react-scroll';
+import { BiUpArrowAlt } from 'react-icons/bi';
 
 const Home = () => {
   return (
@@ -24,12 +25,12 @@ const Home = () => {
 
                 </p>
                 <div>
-                    <button className='text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
+                    <Link to="portfolio" smooth duratiion={500} className='text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
                         portfolio
                         <span className='group-hover:rotate-90 duration-300'>
-                        {/* <BiUpArrowAlt size={25} className='ml-1'/> */}
+                        <BiUpArrowAlt size={25} className='ml-1'/>
                         </span>
-                    </button>
+                    </Link>
                 </div>
             </div>
                <div>

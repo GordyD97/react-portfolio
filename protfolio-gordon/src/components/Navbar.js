@@ -1,6 +1,8 @@
 import React from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
+import { Link } from "react-scroll";
+
 // import NavLinks from "./NavLinks";
 
 
@@ -42,7 +44,7 @@ const [ nav, setNav] = useState(false);
             key={id}
             className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
           >
-            {link}
+            <link to={link} smooth duration={600}>{link}</link>
           </li>
         ))}
       </ul>
@@ -57,7 +59,7 @@ const [ nav, setNav] = useState(false);
             key={id}
             className="px-4 cursor-pointer capitalize py-6 text-4xl"
           >
-            {link}
+            <Link onClick={() => setNav(!nav)} to={link} smooth duration={600}>{link}</Link>
           </li>
         ))}
       </ul>
