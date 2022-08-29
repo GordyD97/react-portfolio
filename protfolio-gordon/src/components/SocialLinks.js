@@ -2,6 +2,7 @@ import React from 'react';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { MdOutlineContactPage } from 'react-icons/md';
 
 export const SocialLinks = () => {
 
@@ -10,8 +11,7 @@ export const SocialLinks = () => {
             id: 1,
             child: (
                 <>
-                linkedin
-                    LinkedIn <FaLinkedin size={30} />
+                LinkedIn <FaLinkedin size={30} />
                 </>
             ),
             href: "https://www.linkedin.com/in/gordon-draine-iv-08a058142/",
@@ -21,7 +21,6 @@ export const SocialLinks = () => {
             id: 2,
             child: (
                 <>
-                GitHub
                     GitHub <FaGithub size={30} />
                 </>
             ),
@@ -31,8 +30,7 @@ export const SocialLinks = () => {
             id: 3,
             child: (
                 <>
-                Email
-                    Mail <HiOutlineMail size={30} />
+                Email <HiOutlineMail size={30} />
                 </>
             ),
             href: "mailto:gordon.draine97@yahoo.com"
@@ -54,8 +52,7 @@ export const SocialLinks = () => {
             id: 5,
             child: (
                 <>
-                {/* Resume */}
-                     <change to resume icon size={30} />
+                Resume <MdOutlineContactPage size={30} />
                 </>
             ),
             href: "../Gordon_Draine_Resume_2.PDF",
@@ -65,25 +62,31 @@ export const SocialLinks = () => {
     ];
 
   return (
-   <div className='flex-col top-[35%] left-0 fixed'>
-    <ul>
 
-        {links.map(({id, child, href, style, download}) => (
-            <li 
-            key={id}
-             className=
-             {'flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md bg-gray-500' + ' ' + style} 
-             >
-                <a href='{href}' className='flex justify-between items-center w-full text-white' download={download} target="_blank" rel="noreferrer">
-                {child}
-                </a>
-                </li>
-
-        ))}
-
-        
-    </ul>
-   </div>
+      <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
+          <ul>
+              {links.map(({ id, child, href, style, download }) => (
+                  <li
+                      key={id}
+                      className={
+                          "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500" +
+                          " " +
+                          style
+                      }
+                  >
+                      <a
+                          href={href}
+                          className="flex justify-between items-center w-full text-white"
+                          download={download}
+                          target="_blank"
+                          rel="noreferrer"
+                      >
+                          {child}
+                      </a>
+                  </li>
+              ))}
+          </ul>
+      </div>
   );
 };
 
