@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroImage from '../assets/picofmeatseniorshowcase.jpg';
-import { FaArrowAltCircleDown } from 'react-icons/md';
+// import { BiUpArrowAlt } from 'react-icons';
 
 const Home = () => {
   return (
@@ -26,9 +26,9 @@ const Home = () => {
                 <div>
                     <button className='text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
                         portfolio
-                        <span className='hover:rotate-90'>
-                        {/* <FaArrowAltCircleDown /> */}
-                          </span>
+                        <span className='group-hover:rotate-90 duration-300'>
+                        {/* <BiUpArrowAlt size={25} className='ml-1'/> */}
+                        </span>
                     </button>
                 </div>
             </div>
