@@ -1,8 +1,9 @@
 import React from 'react';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+// import { BsFillPersonLinesFill } from "react-icons/bs";
 import { MdOutlineContactPage } from 'react-icons/md';
+import { BsTwitter } from 'react-icons/bs';
 
 export const SocialLinks = () => {
 
@@ -40,12 +41,11 @@ export const SocialLinks = () => {
             child: (
                 <>
                 
-                    Twitter <BsFillPersonLinesFill size={30} />
+                    Twitter <BsTwitter size={30} />
                 </>
             ),
             // enter twitter link
             href: "https://twitter.com/Gordy_40",  
-            style: "rounded-br-md",
             download: true,
         },
         {
