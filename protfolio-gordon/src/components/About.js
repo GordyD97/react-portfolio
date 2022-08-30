@@ -14,23 +14,16 @@ const About = () => {
               </div>
 
               <p className="text-xl mt-20">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius,
-                  deserunt illum mollitia officiis qui exercitationem perferendis neque
-                  quasi a recusandae necessitatibus tempora iusto! Blanditiis error
-                  iste, totam fugiat recusandae rerum laborum perferendis molestiae
-                  aperiam asperiores nemo. Magni dolor maxime debitis vitae, eaque hic
-                  ab mollitia voluptatibus, a nostrum eveniet laborum!
+                  I come from a background of problem-solving and testing. The previous jobs that I have acquired before have given me the skill set and mindset to succeed in a problem-heavy environment.
+                   From mechanical problem solving to IT help desk support, my skill set has a wide range. 
               </p>
 
               <br />
 
               <p className="text-xl">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                  pariatur, vel similique sint, nobis aspernatur ut praesentium
-                  explicabo ipsam aliquid quasi laboriosam et culpa possimus repudiandae
-                  quisquam ullam maiores ab unde. Fugiat odio mollitia nemo alias.
-                  Commodi facilis atque nulla vero voluptatem explicabo. Quibusdam,
-                  magni quo! Eum cupiditate debitis labore.
+                  Hello, I'm a full-stack developer who has graduated from the University of Pennsylvania LPS coding Bootcamp with a strive for learning more.
+                   Web development is an excellent career field for me helping me strive to be a better problem solver. I strive for great design and fantastic functions of websites. 
+
               </p>
           </div>
       </div>

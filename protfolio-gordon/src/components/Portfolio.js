@@ -5,46 +5,46 @@ import passwordgen from '../assets/pwgenerator.PNG';
 import dayplanner from '../assets/plannerfix.PNG';
 import resumebuilder from '../assets/resumebuilder.PNG';
 import codequiz from '../assets/codequiz2.PNG';
+// import Link from "portfolios";
 
 
 const Portfolio = () => {
-    // insert input handlers for code and demo buttons including links. 
-
-    const handleClick = (event, key) => {
-        console.log(event.target);
-        console.log('key index: ', key);
-    };
-
     const portfolios = [
         {
             id: 1,
             src: weatherapp,
-            link: "https://gordyd97.github.io/Weather-app/"
+            link: "https://gordyd97.github.io/Weather-app/",
+            repo: "https://github.com/GordyD97/Weather-app"
         },
         {
             id: 2,
             src: weebhaven,
-            link: "/"
+            link: "https://gordyd97.github.io/ecommerece-sales-locator/",
+            repo: "https://github.com/GordyD97/ecommerece-sales-locator"
         },
         {
             id: 3,
             src: passwordgen,
-            link: "/"
+            link: "https://gordyd97.github.io/Password-generator/",
+            repo: "https://github.com/GordyD97/Password-generator"
         },
         {
             id: 4,
             src: dayplanner,
-            link: "/"
+            link: "https://gordyd97.github.io/Work-Day-Planner/",
+            repo: "https://github.com/GordyD97/Work-Day-Planner"
         },
         {
             id: 5,
             src: resumebuilder,
-            link: "/"
+            link: "https://infinite-river-22975.herokuapp.com/signup",
+            repo: "https://github.com/stefcarter/resume-final"
         },
         {
             id: 6,
             src: codequiz,
-            link: "/"
+            link: "https://gordyd97.github.io/Code-Quiz/",
+            repo: "https://github.com/GordyD97/Code-Quiz"
         },
     ];
 
@@ -62,7 +62,8 @@ const Portfolio = () => {
                 </div>
 
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-                    {portfolios.map(({ id, src }) => (
+                    {portfolios.map(({ id, src, link, repo }) => (
+                        
                         <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
                             <img
                                 src={src}
@@ -70,14 +71,15 @@ const Portfolio = () => {
                                 className="rounded-md duration-200 hover:scale-105"
                             />
                             <div className="flex items-center justify-center">
-                                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105" onClick={ () => window.open(link, '_blank')}>
                                     Demo
                                 </button>
-                                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                                    Code
+                                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105" onClick={ () => window.open(repo, '_blank')}>
+                                    Github
                                 </button>
                             </div>
                         </div>
+                        
                     ))}
                 </div>
             </div>

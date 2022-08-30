@@ -12,15 +12,7 @@ const Home = () => {
                     I'm a Full Stack developer.
                 </h2>
                 <p className='text-gray-500 py-4 max-w-md'>
-                      Did you hear that? They've shut down the main reactor. We'll be destroyed for sure. This is madness! We're doomed! There'll be no escape for the Princess this time. What's that? Artoo! Artoo-Detoo, where are you? At last! Where have you been? They're heading in this direction. What are we going to do? We'll be sent to the spice mine of Kessel or smashed into who knows what! Wait a minute, where are you going? The Death Star plans are not in the main computer.
-
-                      Look out! We've got to find out which cell this princess of yours is in. Here it is...cell twenty-one-eight-seven. You go get her. I'll hold them here. Everything is under control. Situation normal.
-
-                      The Force will be with you...always! Boy you said it, Chewie. Where did you dig up that old fossil? Ben is a great man. Yeah, great at getting us into trouble. I didn't hear you give any ideas. Well, anything would be better than just hanging around waiting for him to pick us up. Who do you think.  What is it? I'm afraid I'm not quite sure, sir.
-
-                      Red Six. Can you see Red Five? There's a heavy fire zone on this side. Red Five, where are you? I can't shake him! I'm on him, Luke! Hold on! Blast it! Wedge where are you? Thanks, Wedge. Good shooting, Wedge! Red Leader. This is Gold Leader. We're starting out attack run. I copy, Gold Leader.
-
-                      Well, not at making them interesting, anyways. Well, my little friend, you've got something jammed in here real good. Were you on a cruiser or.  Help me, Obi-Wan Kenobi. You're my only hope. What's this? What is what?!? He asked you a question. What is that? Help me, Obi-Wan Kenobi.
+                      Hello, im Gordon! Come code with me and lets solve some problems together. 
 
 
                 </p>
