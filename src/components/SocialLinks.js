@@ -13,6 +13,7 @@ export const SocialLinks = () => {
             child: (
                 <>
                 LinkedIn 
+                    <i class="fa-brands fa-linkedin" size={30}></i>
                 {/* <FaLinkedin size={30} /> */}
                 </>
             ),
