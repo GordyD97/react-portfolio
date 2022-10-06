@@ -25,6 +25,7 @@ export const SocialLinks = () => {
             child: (
                 <>
                     GitHub 
+                    <i class="fa-brands fa-github" size={30}></i>
                     {/* <FaGithub size={30} /> */}
                 </>
             ),
@@ -35,6 +36,7 @@ export const SocialLinks = () => {
             child: (
                 <>
                 Email 
+                    <i class="fa-solid fa-envelope" size={30}></i>
                 {/* <HiOutlineMail size={30} /> */}
                 </>
             ),
@@ -46,6 +48,7 @@ export const SocialLinks = () => {
                 <>
                 
                     Twitter 
+                    <i class="fa-brands fa-twitter" size={30}></i>
                     {/* <BsTwitter size={30} /> */}
                 </>
             ),
@@ -58,6 +61,7 @@ export const SocialLinks = () => {
             child: (
                 <>
                 Resume 
+                    <i class="fa-solid fa-file-user" size={30}></i>
                 {/* <MdOutlineContactPage size={30} /> */}
                 </>
             ),
