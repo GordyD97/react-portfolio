@@ -9,6 +9,8 @@ import graphql from "../assets/graphql.png";
 import bootstrap from "../assets/bootstrap.jpg";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
+import python from "../assets/python.png";
+import materialui from "../assets/material-ui-logo.png";
 
 const Experience = () => {
     const techs = [
@@ -64,6 +66,18 @@ const Experience = () => {
             id: 9,
             src: github,
             title: "GitHub",
+            style: "shadow-gray-400",
+        },
+        {
+            id: 10,
+            src: python,
+            title: "Python",
+            style: "shadow-gray-400",
+        },
+        {
+            id: 11,
+            src: materialui,
+            title: "MaterialUi",
             style: "shadow-gray-400",
         },
     ];
