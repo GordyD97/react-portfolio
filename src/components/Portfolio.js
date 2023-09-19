@@ -1,10 +1,11 @@
 import React from 'react';
 import weatherapp from '../assets/weather_cap.PNG';
-import weebhaven from '../assets/weebhaven.PNG';
+import dashboard from '../assets/dashboard-2.PNG';
 import passwordgen from '../assets/pwgenerator.PNG';
 import dayplanner from '../assets/plannerfix.PNG';
 import resumebuilder from '../assets/resumebuilder.PNG';
 import codequiz from '../assets/codequiz2.PNG';
+
 // import Link from "portfolios";
 
 
@@ -18,9 +19,10 @@ const Portfolio = () => {
         },
         {
             id: 2,
-            src: weebhaven,
+            src: dashboard,
+            // make domain for dashboard. 
             link: "https://gordyd97.github.io/ecommerece-sales-locator/",
-            repo: "https://github.com/GordyD97/ecommerece-sales-locator"
+            repo: "https://github.com/GordyD97/Admin-dashboard"
         },
         {
             id: 3,
